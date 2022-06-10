@@ -7,4 +7,6 @@ fun main(){
     println("Nome do cliente: ${cliente.nome}")
     println("CPF: ${cliente.cpf}")
 
+    println(cliente.pessoaInfo())
+
 }
