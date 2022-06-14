@@ -3,7 +3,10 @@ package com.ariel.digionebank
 class Gerente(
     nome: String,
     cpf: String,
-    salario: Double
-) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
+    salario: Double,
+    val senha: String
+) : Funcionario(nome = nome, cpf = cpf, salario = salario), Logavel {
     override fun calculoAuxilio() = salario * 0.4
+
+    override fun login(): Boolean = "senha123" == senha
 }
